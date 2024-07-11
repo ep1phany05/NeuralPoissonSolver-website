@@ -1,24 +1,23 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
-<head lang="en">
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-
     <title>Neural Poisson Solver</title>
-
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💫</text></svg>">
 
+    <!-- External CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
     <link rel="stylesheet" href="css/app.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
 
+    <!-- Polyfill and MathJax -->
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
+    <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"></script>
@@ -30,108 +29,75 @@
     <div class="container" id="main">
         <div class="row">
             <h2 class="col-md-12 text-center">
-                <b>Neural Poisson Solver</b>:  <br> A Universal and Continuous Framework <br> for Natural Signal Blending </br>
-                <small>
-                    ECCV 2024
-                </small>
-
+                <b style="font-size: 1.5em;">Neural Poisson Solver</b>: <br>
+                <span style="font-weight: lighter;">A Universal and Continuous Framework <br> for Natural Signal Blending</span> <br>
+                <small>ECCV 2024</small>
             </h2>
         </div>
         <div class="row">
             <div class="col-md-12 text-center">
                 <ul class="list-inline">
                     <li>
-                        <a href="https://ep1phany05.github.io/">
-                          Delong Wu
-                        </a>
-                        </br>Nanjing University
+                        <a href="https://ep1phany05.github.io/">Delong Wu</a>
+                        <br>Nanjing University
                     </li>
                     <li>
-                        <a href="https://pakfa.github.io/zhuhao_photo.github.io/">
-                          Hao Zhu
-                        </a>
-                        </br>Nanjing University
+                        <a href="https://pakfa.github.io/zhuhao_photo.github.io/">Hao Zhu</a>
+                        <br>Nanjing University
                     </li>
                     <li>
-                        <a href="https://qzhang-cv.github.io/">
-                          Qi Zhang
-                        </a>
-                        </br>Tencent AI Lab
+                        <a href="https://qzhang-cv.github.io/">Qi Zhang</a>
+                        <br>Tencent AI Lab
                     </li><br>
                     <li>
-                        <a>
-                          You Li
-                        </a>
-                        </br>China Astronaut Research and Training Center
+                        <a>You Li</a>
+                        <br>China Astronaut Research and Training Center
                     </li>
                     <li>
-                        <a href="https://cite.nju.edu.cn/People/Faculty/20190621/i5054.html">
-                          Xun Cao
-                        </a>
-                        </br>Nanjing University
+                        <a href="https://cite.nju.edu.cn/People/Faculty/20190621/i5054.html">Xun Cao</a>
+                        <br>Nanjing University
                     </li>
                     <li>
-                        <a href="https://vision.nju.edu.cn/fc/d3/c29470a457939/page.htm">
-                          Zhan Ma
-                        </a>
-                        </br>Nanjing University
+                        <a href="https://vision.nju.edu.cn/fc/d3/c29470a457939/page.htm">Zhan Ma</a>
+                        <br>Nanjing University
                     </li>
                 </ul>
             </div>
         </div>
 
         <div class="row">
-                <div class="col-md-4 col-md-offset-4 text-center">
-                    <ul class="nav nav-pills nav-justified">
-                        <li>
-                            <a href="">
-                            <image src="img/paper-cover.jpg" height="60px">
-                                <h4><strong>Paper</strong></h4>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/ep1phany05/NeuralPoissonSolver">
-                            <image src="img/github.png" height="60px">
-                                <h4><strong>Code</strong></h4>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+            <div class="col-md-4 col-md-offset-4 text-center">
+                <ul class="nav nav-pills nav-justified">
+                    <li>
+                        <a href="">
+                            <img src="img/paper-cover.jpg" height="60px">
+                            <h4><strong>Paper</strong></h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/ep1phany05/NeuralPoissonSolver">
+                            <img src="img/github.png" height="60px">
+                            <h4><strong>Code</strong></h4>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
 
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <img src="img/overview.png" sizes="100vw" srcset="img/overview.png 1000w, img/overview.png 2000w" class="img-responsive" alt="pipeline">
-						</div>
-            <div class="col-md-8 col-md-offset-2">
-							<p class="text-center">
-                                Overview of the Neural Poisson Solver.
-							</p>
-						</div>
+                <p class="text-center">
+                    Overview of the Neural Poisson Solver.
+                </p>
+            </div>
         </div>
 
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
-                <h3>
-                    Abstract
-                </h3>
+                <h3>Abstract</h3>
                 <p class="text-justify">
-                    Implicit Neural Representation (INR) has become a popular method for representing visual signals (e.g., 2D images and 3D scenes),
-                    demonstrating promising results in various downstream applications. Given its potential as a medium for visual signals,
-                    exploring the development of a neural blending method that utilizes INRs is a natural progression. Neural blending
-                    involves merging two INRs to create a new INR that encapsulates information from both original representations.
-                    A direct approach involves applying traditional image editing methods to the INR rendering process. However,
-                    this method often results in blending distortions, artifacts, and color shifts, primarily due to the discretization
-                    of the underlying pixel grid and the introduction of boundary conditions for solving variational problems. To tackle
-                    this issue, we introduce the Neural Poisson Solver, a plug-and-play and universally applicable framework across
-                    different signal dimensions for blending visual signals represented by INRs. Our Neural Poisson Solver offers a
-                    variational problem-solving approach based on the continuous Poisson equation, demonstrating exceptional performance
-                    across various domains. Specifically, we propose a gradient-guided neural solver to represent the solution process
-                    of the variational problem, refining the target signal to achieve natural blending results. We also develop a Poisson
-                    equation-based loss and optimization scheme to train our solver, ensuring it effectively blends the input INR scenes
-                    while preserving their inherent structure and semantic content. The lack of dependence on additional prior knowledge
-                    makes our method easily adaptable to various task categories, highlighting its versatility. Comprehensive experimental
-                    results validate the robustness of our approach across multiple dimensions and blending tasks.
+                    Implicit Neural Representation (INR) has become a popular method for representing visual signals (e.g., 2D images and 3D scenes), demonstrating promising results in various downstream applications. Given its potential as a medium for visual signals, exploring the development of a neural blending method that utilizes INRs is a natural progression. Neural blending involves merging two INRs to create a new INR that encapsulates information from both original representations. A direct approach involves applying traditional image editing methods to the INR rendering process. However, this method often results in blending distortions, artifacts, and color shifts, primarily due to the discretization of the underlying pixel grid and the introduction of boundary conditions for solving variational problems. To tackle this issue, we introduce the Neural Poisson Solver, a plug-and-play and universally applicable framework across different signal dimensions for blending visual signals represented by INRs. Our Neural Poisson Solver offers a variational problem-solving approach based on the continuous Poisson equation, demonstrating exceptional performance across various domains. Specifically, we propose a gradient-guided neural solver to represent the solution process of the variational problem, refining the target signal to achieve natural blending results. We also develop a Poisson equation-based loss and optimization scheme to train our solver, ensuring it effectively blends the input INR scenes while preserving their inherent structure and semantic content. The lack of dependence on additional prior knowledge makes our method easily adaptable to various task categories, highlighting its versatility. Comprehensive experimental results validate the robustness of our approach across multiple dimensions and blending tasks.
                 </p>
             </div>
         </div>
@@ -139,65 +105,47 @@
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <img src="img/2d_result_compare.png" sizes="100vw" srcset="img/2d_result_compare.png 1000w, img/2d_result_compare.png 2000w" class="img-responsive" alt="2d_result_compare">
-						</div>
-            <div class="col-md-8 col-md-offset-2">
-							<p class="text-center">
-                                Displaying the blending results of the PIE method and our approach across different 2D scenes.
-                                The first and third columns show the source and target scenes for two tasks, respectively.
-                                The second and fourth columns respectively showcase the blending outcomes and related details.							</p>
-						</div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <h3>
-                    Blending Control
-                </h3>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <img src="img/2d_result_style.png" sizes="100vw" srcset="img/2d_result_style.png 1000w, img/2d_result_style.png 2000w" class="img-responsive" alt="2d_result_style">
-            </div>
-            <div class="col-md-8 col-md-offset-2">
                 <p class="text-center">
-                    When \(\lambda<1\), the blending operation accentuates the gradient within the blending region \(\Omega\),
-                    thereby more effectively preserving the intricate details of the scene. However,
-                    this approach may lead to a noticeable color discrepancy between the blending edge \(\partial \Omega\)
-                    and the background INR \(\mathcal{S}\). On the other hand, as \(\lambda\) increases, the focus shifts
-                    towards ensuring a smooth transition at \(\partial \Omega\). While this method facilitates a seamless blend,
-                    it might slightly diminish the precision of the scene's detailed features.
+                    Displaying the blending results of the PIE method and our approach across different 2D scenes. The first and third columns show the source and target scenes for two tasks, respectively. The second and fourth columns respectively showcase the blending outcomes and related details.
                 </p>
             </div>
         </div>
 
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
-                <h3>
-                    Exploration in NeRF
-                </h3>
+                <h3>Blending Control</h3>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <img src="img/2d_result_style.png" sizes="100vw" srcset="img/2d_result_style.png 1000w, img/2d_result_style.png 2000w" class="img-responsive" alt="2d_result_style">
+                <p class="text-center">
+                    When \(\lambda<1\), the blending operation accentuates the gradient within the blending region \(\Omega\), thereby more effectively preserving the intricate details of the scene. However, this approach may lead to a noticeable color discrepancy between the blending edge \(\partial \Omega\) and the background INR \(\mathcal{S}\). On the other hand, as \(\lambda\) increases, the focus shifts towards ensuring a smooth transition at \(\partial \Omega\). While this method facilitates a seamless blend, it might slightly diminish the precision of the scene's detailed features.
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>Exploration in NeRF</h3>
             </div>
         </div>
 
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <img src="img/3d_result.png" sizes="100vw" srcset="img/3d_result.png 1000w, img/3d_result.png 2000w" class="img-responsive" alt="3d_result">
-            </div>
-                <div class="col-md-8 col-md-offset-2">
-                                <p class="text-center">
-                                    Our method in Radiance Fields blending.
-                                </p>
+                <p class="text-center">
+                    Our method in Radiance Fields blending.
+                </p>
             </div>
         </div>
-            
+
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
-                <h3>
-                    Citation
-                </h3>
+                <h3>Citation</h3>
                 <div><!-- class="form-group col-md-10 col-md-offset-1" -->
-<pre style="width:100%">@inproceedings{liu2024finer,
+                    <pre style="width:100%">@inproceedings{liu2024finer,
     title = {FINER: Flexible spectral-bias tuning in Implicit NEural Representation by Variable-periodic Activation Functions},
     author = {Liu, Zhen and Zhu, Hao and Zhang, Qi and Fu, Jingde and Deng, Weibing and Ma, Zhan and Guo, Yanwen and Cao, Xun},
     booktitle = {Proceedings of the IEEE/CVF Computer Vision and Pattern Recognition Conference (CVPR)},
@@ -209,14 +157,13 @@
 
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
-                <h3>
-                    Acknowledgements
-                </h3>
+                <h3>Acknowledgements</h3>
                 <p class="text-justify">
-                The website template was borrowed from <a href="http://mgharbi.com/">Michaël Gharbi</a>.
+                    The website template was borrowed from <a href="https://mgharbi.com/">Michaël Gharbi</a>.
                 </p>
             </div>
         </div>
     </div>
 </body>
+
 </html>
